@@ -435,17 +435,7 @@
             display: inline-block;
         }
 
-        .carousel__navigation-button {
-            display: inline-block;
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: #333;
-            background-clip: content-box;
-            border: 0.25rem solid transparent;
-            border-radius: 50%;
-            font-size: 0;
-            transition: transform 0.1s;
-        }
+  
 
         .carousel::before,
         .carousel::after,
@@ -464,23 +454,23 @@
 
         .carousel::before,
         .carousel__prev {
-            left: -0.5rem;
+            left: 0rem;
         }
 
         .carousel::after,
         .carousel__next {
-            right: -0.5rem;
+            right: 0rem;
         }
 
         .carousel::before,
         .carousel::after {
             content: '';
             z-index: 1;
-            background-color: #195a9f;
+            background-color: #f8d53653;
             background-size: 0.75rem 0.75rem;
             background-repeat: no-repeat;
             background-position: center center;
-            color: #f8d336;
+            color: #f8d53653;
             font-size: 2.5rem;
             line-height: 4rem;
             text-align: center;
@@ -512,7 +502,7 @@
         }
 
         .donate__button {
-            margin-bottom:0.75rem;
+            margin-bottom: 0.75rem;
             color: #f8d336 !important;
             text-transform: uppercase;
             text-decoration: none;
@@ -541,9 +531,16 @@
             width: 100%;
             font-size: 75%;
         }
+
         .donate__container {
             text-align: center;
             width: 100%;
+        }
+
+        @media all and (max-width: 600px) {
+            .flags {
+                --ggs: 2;
+            }
         }
     </style>
 </head>
@@ -557,8 +554,8 @@
                 <h1>
                     <span itemprop="name">Avenir Franco-Ukrainien</span>
                 </h1>
-                <span itemprop="title">Association de soutiens aux peuples Ukrainiens</span>
-                <img class="logo" src="logo.png" />
+                <div itemprop="title">Association de soutiens aux peuples Ukrainiens</div>
+                <div><img class="logo" src="logo.png" /></div>
             </div>
 
 
@@ -678,12 +675,13 @@
             <li>Bouillotes, thermo</li>
             <br />
             <div class="donate__container">
-            <div class="donate__button">
-                <a class="donate__link" href="https://www.helloasso.com/associations/avenir-franco-ukrainien">➡️ Aidez financièrement 🔗</a>
-            </div>
-            <br />
-            <span class="donate__tip">Collecte via HelloAsso, attestation de don pour défiscalisation fournie sur
-                demande.</span>
+                <div class="donate__button">
+                    <a class="donate__link" href="https://www.helloasso.com/associations/avenir-franco-ukrainien">➡️
+                        Aidez financièrement 🔗</a>
+                </div>
+                <br />
+                <span class="donate__tip">Collecte via HelloAsso, attestation de don pour défiscalisation fournie sur
+                    demande.</span>
             </div>
         </div>
         <h2>Contact et demande d'information</h2>
